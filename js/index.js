@@ -11,7 +11,7 @@ function entrar(){
     const error = document.getElementById("error");
     const clave = input.value.trim().toLowerCase();
 
-    if(clave === "Tribilin"){
+    if(clave === "tribilin"){
         window.location.href = "universo.html";
     }else{
         error.innerText = "Parece que esa no es la clave. Intenta de nuevo 💕";
