@@ -1,30 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Para Wendy 💖</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body{
-            margin:0;
-            height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
-            color:white;
-            font-family: 'Segoe UI', sans-serif;
-            text-align:center;
-        }
-        h1{ font-size:2.2rem; }
-        p{ font-size:1.2rem; opacity:.9; }
-    </style>
+<meta charset="UTF-8">
+<title>Acceso especial 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+    font-family: 'Segoe UI', sans-serif;
+    color:white;
+}
+
+.card{
+    background:rgba(0,0,0,.45);
+    padding:35px;
+    border-radius:18px;
+    text-align:center;
+    max-width:360px;
+    box-shadow:0 0 25px rgba(255,255,255,.15);
+}
+
+h2{
+    margin-bottom:10px;
+}
+
+p{
+    opacity:.9;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border-radius:10px;
+    border:none;
+    font-size:1rem;
+}
+
+button{
+    margin-top:18px;
+    padding:12px;
+    width:100%;
+    border:none;
+    border-radius:10px;
+    background:#ff7eb3;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff5f9e;
+}
+
+#error{
+    margin-top:12px;
+    color:#ffb3b3;
+}
+</style>
 </head>
 <body>
-    <div>
-        <h1>Hola mi niña 🌌💖</h1>
-        <p>Si estás viendo esto desde tu celular,  
-        es porque este universo ya está funcionando.</p>
-    </div>
+
+<div class="card">
+    <h2>💖 Acceso especial</h2>
+    <p>Solo alguien muy especial puede entrar…<br>
+    ¿Cuál es la clave?</p>
+
+    <input type="password" id="clave" placeholder="Escribe aquí…">
+    <button onclick="entrar()">Entrar</button>
+
+    <div id="error"></div>
+</div>
+
+<script>
+function entrar(){
+    const clave = document.getElementById("clave").value.trim().toLowerCase();
+    const correcta = "tribilin"; // CLAVE
+
+    if(clave === correcta){
+        window.location.href = "universo.html";
+    }else{
+        document.getElementById("error").innerText =
+        "Mmm… solo Wendy sabe la respuesta 💕";
+    }
+}
+</script>
+
 </body>
 </html>
