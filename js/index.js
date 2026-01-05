@@ -16,7 +16,7 @@ function entrar(){
     if(input.value === "Tribilin" || input.value === "tribilin"){
         window.location.href = "universo.html";
     }else{
-        error.innerText = "Mmm… esa no es la clave 💕";
+        error.innerText = "Parece que esa no es la clave...💕";
         card.classList.add("shake");
         setTimeout(() => card.classList.remove("shake"), 400);
     }
