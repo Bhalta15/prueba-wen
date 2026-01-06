@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #ffdde1, #ee9ca7);
+    font-family: 'Segoe UI', sans-serif;
+    color: #5a2a2a;
+    text-align: center;
+}
+
+.contenedor{
+    max-width: 420px;
+    padding: 25px;
+    animation: aparecer 1.2s ease;
+}
+
+@keyframes aparecer{
+    from{ opacity:0; transform: translateY(20px); }
+    to{ opacity:1; transform: translateY(0); }
+}
+
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.mensaje{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.pastel{
+    position: relative;
+    margin: 20px 0;
+}
+
+.pastel img{
+    width: 200px;
+}
+
+.velas{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    transition: opacity 0.6s ease;
+}
+
+.velas.apagadas{
+    opacity: 0;
+}
+
+.instruccion{
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+button{
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    background: #ff7eb3;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255,126,179,.6);
+    transition: .3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.oculto{
+    display: none;
+}
+
+
+
+.pastel-pro{
+    position: relative;
+    width: 260px;
+    margin: 50px auto;
+}
+
+.piso{
+    margin: 0 auto;
+    background: linear-gradient(180deg,#ffd1dc,#f7a1b5);
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.piso-1{
+    width: 260px;
+    height: 80px;
+}
+
+.piso-2{
+    width: 200px;
+    height: 70px;
+    margin-bottom: -15px;
+}
+
+.piso-3{
+    width: 140px;
+    height: 60px;
+    margin-bottom: -15px;
+}
+
+/* Velas */
+.velas{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.vela{
+    width: 10px;
+    height: 34px;
+    background: repeating-linear-gradient(
+        45deg,
+        #fff,
+        #fff 4px,
+        #ffb6c1 4px,
+        #ffb6c1 8px
+    );
+    border-radius: 6px;
+    position: relative;
+}
+
+.flama{
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 14px;
+    background: radial-gradient(circle,#fff700,#ff9800,#ff5722);
+    border-radius: 50%;
+    animation: flamaCool 0.6s infinite alternate;
+    filter: drop-shadow(0 0 6px orange);
+}
+
+@keyframes flamaCool{
+    from{ transform: translateX(-50%) scale(1); }
+    to{ transform: translateX(-50%) scale(0.75); }
+}
+
+/* Apagado */
+.apagadas .flama{
+    opacity: 0;
+    animation: none;
+}
