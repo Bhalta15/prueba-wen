@@ -14,7 +14,7 @@ function entrar(){
     console.log("Valor escrito:", input.value);
 
     if(input.value === "Tribilin" || input.value === "tribilin"){
-        window.location.href = "universo.html";
+        window.location.href = "cumple.html";
     }else{
         error.innerText = "Parece que esa no es la clave...💕";
         card.classList.add("shake");
