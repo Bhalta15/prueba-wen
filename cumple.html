@@ -8,41 +8,71 @@
 </head>
 <body>
 
-<div class="contenedor">
-    <h1>🎉 Feliz Cumpleaños, Preciosa 🎉</h1>
+<!-- ESCENA GENERAL -->
+<div class="escena">
 
-    <p class="mensaje">
-        Hoy celebro tu vida, tu sonrisa y todo lo hermoso que eres.  
-        Amo compartir este camino contigo, todo lo que hemos vivido  
-        y todo lo lindo que aún nos espera.  
-        Gracias por existir y por elegirme cada día 💖
-    </p>
+    <!-- FONDO FIESTA -->
+    <div class="fondo-fiesta"></div>
 
-    <div class="pastel-pro">
-    <div class="velas" id="velas">
-        <div class="vela"><span class="flama"></span></div>
-        <div class="vela"><span class="flama"></span></div>
-        <div class="vela"><span class="flama"></span></div>
-        <div class="vela"><span class="flama"></span></div>
-        <div class="vela"><span class="flama"></span></div>
-        <div class="vela"><span class="flama"></span></div>
-        <div class="vela"><span class="flama"></span></div>
-        <div class="vela"><span class="flama"></span></div>
-    </div>
-
-    <div class="piso piso-3"></div>
-    <div class="piso piso-2"></div>
-    <div class="piso piso-1"></div>
+    <!-- GORRITOS DECORATIVOS -->
+   <div class="gorritos">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
 </div>
 
 
-    <p class="instruccion" id="instruccion">
-        Pide un deseo y agita tu celular para soplar ✨
-    </p>
 
-    <button id="continuar" class="oculto" onclick="irAlUniverso()">
-        Continuar 🌌
-    </button>
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="contenedor">
+        <h1>🎉Feliz Cumpleaños Preciosa🎉</h1>
+
+        <p class="mensaje">
+            Hoy celebro tu vida, tu sonrisa y todo lo hermoso que eres.  
+            Amo compartir este camino contigo, todo lo que hemos vivido  
+            y todo lo lindo que aún nos espera. 
+            Gracias por existir y por elegirme cada día.
+        </p><br>
+
+        <div class="pastel-pro">
+
+            <div class="velas" id="velas">   
+                <div class="vela"><span class="flama"></span></div>
+                <div class="vela"><span class="flama"></span></div>
+                <div class="vela"><span class="flama"></span></div>
+                <div class="vela"><span class="flama"></span></div>
+            </div>
+
+            <div class="piso piso-3">
+                <div class="topping"></div>
+            </div>
+
+           <div class="piso piso-2">
+    <div class="topping"></div>
+    <div class="numero-pastel">21</div>
+</div>
+
+
+            <div class="piso piso-1">
+                <div class="topping"></div>
+            </div>
+
+            <button id="btnSoplar" class="btn-soplar oculto">
+                💨Soplar velas
+            </button>
+        </div>
+
+        <p class="instruccion" id="instruccion">
+            Pide un deseo y agita tu celular para soplar ✨
+        </p>
+
+        <button id="continuar" class="oculto" onclick="irAlUniverso()">
+            Continuar 🌌
+        </button>
+    </div>
 </div>
 
 <script src="js/cumple.js"></script>
