@@ -114,6 +114,12 @@ body{
     transform: translate(-50%,-50%);
     text-align: center;
 }
+.texto-centro {
+    color: rgb(54, 248, 232);      /* Esto pone el texto en blanco */
+    font-weight: bold; /* Esto pone el texto en negritas */
+    text-align: center; /* Esto mantiene el texto centrado */
+    font-size: 20px;
+}
 /* =====================
    PLANETA TIERRA (CENTRO)
    ===================== */
@@ -193,11 +199,6 @@ body{
     display: none;
 }
 
-
-
-
-
-
 /* =====================
    ESTRELLAS RANDOM CON MENSAJE
    ===================== */
@@ -239,6 +240,33 @@ body{
         0 0 20px white,
         0 0 40px rgba(255,255,255,.9);
 }
+
+
+
+/* Botón Continuar con efecto espacial */
+.continuar{
+    position: absolute;       /* Para moverlo libremente */
+    top: 20px;                
+    right: 10px;              
+    margin-top: 1px;
+    padding: 14px 30px;
+    font-size: 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #432ff5, #7582f5);
+    box-shadow: 0 0 15px rgba(243, 241, 247, 0.5);
+    border: none;             
+    cursor: pointer;          
+    font-weight: bold;        
+    color: white;             
+    animation: resplandor 2s infinite alternate;
+}
+
+/* Hover */
+.continuar:hover{
+    box-shadow: 0 0 25px rgba(63, 61, 163, 0.8);
+}
+
+
 
 
 
